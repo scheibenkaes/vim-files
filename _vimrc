@@ -1,7 +1,5 @@
-imap ;so System.out.println();<left><left>
 imap ;rb Best Regards,<return>Benjamin
 imap ;. self.
-imap ;sub sub  {<CR>}<up><end><left><left>
 set ignorecase
 set nu
 nnoremap <C-K> <C-V>
@@ -20,11 +18,7 @@ set incsearch
 
 set autoindent 
 
-set gfn=Droid_Sans_Mono
-
 set backspace=2
-
-set dictionary+=private_labels.txt
 
 set foldmethod=syntax
 set foldlevelstart=20
@@ -34,12 +28,24 @@ set smartcase
 set nocp
 filetype plugin on
 
-"set langmenu=fcuk.utf-8
-
-let Tlist_Ctags_Cmd="d:\ctag\ctags\ctags.exe"
-
 :color desert
 
 set cursorline
-
+set guifont=DejaVu\ Sans\ Mono
 set wildmenu
+
+nmap <Leader>l V"+y
+nmap <Leader>a ggVG"+y
+
+
+nmap <Leader>c :e $MYVIMRC<Return>
+nmap <Leader>u :.s/\\/\//g<Return>:nohlsearch<Return>
+nmap <Leader>\ :.s/\//\\/g<Return>:nohlsearch<Return>
+
+if has("win32")
+    set rtp=C:\vimfiles,$VIMRUNTIME
+    let Tlist_Ctags_Cmd="C:\ctags58\ctags.exe"
+    set tags+=~\tags
+endif
+
+cd ~

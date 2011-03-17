@@ -26,12 +26,12 @@ set foldlevelstart=20
 set smartcase
 
 set nocp
-filetype plugin on
+set nocompatible
+filetype plugin indent on
 
 :color desert
 
 set cursorline
-set guifont=DejaVu\ Sans\ Mono
 set wildmenu
 
 nmap <Leader>l V"+y
@@ -47,5 +47,7 @@ if has("win32")
     let Tlist_Ctags_Cmd="C:\ctags58\ctags.exe"
     set tags+=~\tags
 endif
+
+au BufRead,BufNewFile *.html.erb set ft=eruby.eruby-rails
 
 cd ~

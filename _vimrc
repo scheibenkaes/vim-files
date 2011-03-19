@@ -48,6 +48,6 @@ if has("win32")
     set tags+=~\tags
 endif
 
-au BufRead,BufNewFile *.html.erb set ft=eruby.eruby-rails
+au BufRead,BufNewFile *.html.erb set ft=eruby.eruby-rails.html
 
 cd ~

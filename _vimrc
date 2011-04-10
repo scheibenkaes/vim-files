@@ -1,9 +1,16 @@
+call pathogen#runtime_append_all_bundles() 
+call pathogen#helptags() 
+
+let vimclojure#NailgunClient = "/Users/b6n/Code/vimclojure-nailgun-client/ng"
+let vimclojure#WantNailgun = 1
+
 imap ;rb Best Regards,<return>Benjamin
 imap ;. self.
 set ignorecase
 set nu
 nnoremap <C-K> <C-V>
-
+let mapleader = ","
+let maplocalleader = ","
 set tabstop=4 
 set shiftwidth=4 
 set expandtab 
@@ -24,7 +31,6 @@ set foldmethod=syntax
 set foldlevelstart=20
 
 set smartcase
-
 set nocp
 set nocompatible
 filetype plugin indent on
@@ -37,7 +43,7 @@ set wildmenu
 nmap <Leader>l V"+y
 nmap <Leader>a ggVG"+y
 
-
+nmap <F3> :NERDTreeToggle<CR>
 nmap <Leader>c :e $MYVIMRC<Return>
 nmap <Leader>u :.s/\\/\//g<Return>:nohlsearch<Return>
 nmap <Leader>\ :.s/\//\\/g<Return>:nohlsearch<Return>

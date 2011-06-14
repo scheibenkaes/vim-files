@@ -13,3 +13,6 @@
 [submodule "nerdtree"]
 	path = nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim-lein"]
+	path = vim-lein
+	url = git@github.com:scheibenkaes/vim-lein.git

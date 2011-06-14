@@ -10,3 +10,6 @@
 [submodule "TVO--The-Vim-Outliner"]
 	path = TVO--The-Vim-Outliner
 	url = https://github.com/vim-scripts/TVO--The-Vim-Outliner.git
+[submodule "nerdtree"]
+	path = nerdtree
+	url = https://github.com/scrooloose/nerdtree.git

@@ -19,3 +19,6 @@
 [submodule "vim-lein"]
 	path = vim-lein
 	url = git@github.com:scheibenkaes/vim-lein.git
+[submodule "vimerl"]
+	path = vimerl
+	url = https://github.com/oscarh/vimerl.git

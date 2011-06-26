@@ -22,3 +22,6 @@
 [submodule "vimerl"]
 	path = vimerl
 	url = https://github.com/oscarh/vimerl.git
+[submodule "snipmate-snippets"]
+	path = snipmate-snippets
+	url = git@github.com:scheibenkaes/snipmate-snippets.git

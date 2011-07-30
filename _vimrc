@@ -3,6 +3,7 @@ call pathogen#helptags()
 
 let vimclojure#NailgunClient = "/Users/b6n/Code/vimclojure-nailgun-client/ng"
 let vimclojure#WantNailgun = 1
+let vimclojure#FuzzyIndent = 1
 let vimclojure#ParenRainbow = 1
 
 imap ;rb Best Regards,<return>Benjamin
@@ -56,4 +57,8 @@ if has("win32")
 endif
 
 au BufRead,BufNewFile *.html.erb set ft=eruby.eruby-rails.html
+au BufRead,BufNewFile *.cljs set ft=clojure
+
+command! W :w 
+
 

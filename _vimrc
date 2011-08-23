@@ -60,5 +60,6 @@ au BufRead,BufNewFile *.html.erb set ft=eruby.eruby-rails.html
 au BufRead,BufNewFile *.cljs set ft=clojure
 
 command! W :w 
-
+command! Gg :!git gui &
+command! Gk :!gitk &
 

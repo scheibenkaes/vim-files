@@ -63,3 +63,7 @@ command! W :w
 command! Gg :!git gui &
 command! Gk :!gitk &
 
+if has("gui_running")
+    set guioptions=egmrt
+endif
+

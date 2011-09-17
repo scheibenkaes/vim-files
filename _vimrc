@@ -37,7 +37,6 @@ set smartcase
 set nocompatible
 filetype plugin indent on
 
-set background=dark
 :color solarized
 
 set cursorline
@@ -70,5 +69,6 @@ let g:slimv_swank_clojure = '! xterm -e lein swank &'
 
 if has("gui_running")
     set guioptions=egmrt
+    set background=dark
 endif
 

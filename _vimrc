@@ -8,7 +8,7 @@ let vimclojure#ParenRainbow = 1
 
 imap ;rb Best Regards,<return>Benjamin
 imap ;. self.
-set ignorecase
+"set ignorecase
 set nu
 nnoremap <C-K> <C-V>
 let mapleader = ","
@@ -37,6 +37,7 @@ set smartcase
 set nocompatible
 filetype plugin indent on
 
+set background=dark
 :color solarized
 
 set cursorline
@@ -64,6 +65,8 @@ au BufRead,BufNewFile *.cljs set ft=clojure
 command! W :w 
 command! Gg :!git gui &
 command! Gk :!gitk --all &
+
+let g:slimv_swank_clojure = '! xterm -e lein swank &'
 
 if has("gui_running")
     set guioptions=egmrt

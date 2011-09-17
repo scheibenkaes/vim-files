@@ -25,3 +25,6 @@
 [submodule "snipmate-snippets"]
 	path = snipmate-snippets
 	url = git@github.com:scheibenkaes/snipmate-snippets.git
+[submodule "vim-colors-solarized"]
+	path = vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git

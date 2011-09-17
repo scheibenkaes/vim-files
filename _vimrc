@@ -61,7 +61,7 @@ au BufRead,BufNewFile *.cljs set ft=clojure
 
 command! W :w 
 command! Gg :!git gui &
-command! Gk :!gitk &
+command! Gk :!gitk --all &
 
 if has("gui_running")
     set guioptions=egmrt

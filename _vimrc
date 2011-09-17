@@ -65,7 +65,10 @@ command! W :w
 command! Gg :!git gui &
 command! Gk :!gitk --all &
 
-let g:slimv_swank_clojure = '! xterm -e lein swank &'
+if has("use_slimv")
+    let g:slimv_swank_clojure = '! xterm -e lein swank &'
+    let use_slimv = 1
+endif
 
 if has("gui_running")
     set guioptions=egmrt

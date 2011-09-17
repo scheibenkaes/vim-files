@@ -18,6 +18,7 @@ set shiftwidth=4
 set expandtab 
 
 set hlsearch
+set visualbell
 
 syn on
 
@@ -33,17 +34,18 @@ set foldmethod=syntax
 set foldlevelstart=20
 
 set smartcase
-set nocp
 set nocompatible
 filetype plugin indent on
 
-:color desert
+:color solarized
 
 set cursorline
 set wildmenu
 
 nmap <Leader>l V"+y
 nmap <Leader>a ggVG"+y
+nmap <Leader>O O<ESC>j
+nmap <Leader>o o<ESC>k
 
 nmap <F3> :NERDTreeToggle<CR>
 nmap <Leader>c :e $MYVIMRC<Return>

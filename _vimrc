@@ -58,6 +58,10 @@ if has("win32")
     set tags+=~\tags
 endif
 
+if has("mac")
+    let erlang_man_path = "~/Documents/otp_doc_man_R14B03/man"
+endif
+
 au BufRead,BufNewFile *.html.erb set ft=eruby.eruby-rails.html
 au BufRead,BufNewFile *.cljs set ft=clojure
 

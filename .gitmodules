@@ -19,9 +19,6 @@
 [submodule "vim-lein"]
 	path = vim-lein
 	url = git@github.com:scheibenkaes/vim-lein.git
-[submodule "vimerl"]
-	path = vimerl
-	url = https://github.com/oscarh/vimerl.git
 [submodule "snipmate-snippets"]
 	path = snipmate-snippets
 	url = git@github.com:scheibenkaes/snipmate-snippets.git
@@ -31,3 +28,6 @@
 [submodule "vim-surround"]
 	path = vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "vimerl"]
+	path = vimerl
+	url = https://github.com/jimenezrick/vimerl.git

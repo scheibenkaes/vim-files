@@ -31,3 +31,6 @@
 [submodule "vimerl"]
 	path = vimerl
 	url = https://github.com/jimenezrick/vimerl.git
+[submodule "slimv.vim"]
+	path = slimv.vim
+	url = https://github.com/vim-scripts/slimv.vim.git

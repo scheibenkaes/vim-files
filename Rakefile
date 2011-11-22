@@ -1,6 +1,6 @@
 
 task :default do
-    puts "foo"
+    puts "Use install to install"
 end
 
 $VIM_FOLDER = File.expand_path "~/.vim"
@@ -38,6 +38,7 @@ def install_pathogen
     end
 end
 
+desc "Install all bundles listed here to ~/.vim/bundle"
 task :install do |t|
      unless File.directory? $VIM_FOLDER
          puts "Creating home folder under #{$VIM_FOLDER}"

@@ -37,7 +37,7 @@ set smartcase
 set nocompatible
 filetype plugin indent on
 
-:color solarized
+:color desert
 
 set cursorline
 set wildmenu

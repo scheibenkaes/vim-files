@@ -49,6 +49,7 @@ nmap <Leader>o o<ESC>k
 
 nmap <F3> :NERDTreeToggle<CR>
 nmap <Leader>c :e $MYVIMRC<Return>
+nmap <Leader>rc :so $MYVIMRC<Return>
 nmap <Leader>u :.s/\\/\//g<Return>:nohlsearch<Return>
 nmap <Leader>\ :.s/\//\\/g<Return>:nohlsearch<Return>
 
@@ -73,6 +74,9 @@ if has("use_slimv")
     let g:slimv_swank_clojure = '! xterm -e lein swank &'
     let use_slimv = 1
 endif
+
+" remapping this as slimv is overriding <Leader>t
+nmap <Leader>C :CommandT<CR>
 
 if has("gui_running")
     set guioptions=egmrt

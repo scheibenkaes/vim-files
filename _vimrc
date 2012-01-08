@@ -49,7 +49,7 @@ nmap <Leader>o o<ESC>k
 
 nmap <F3> :NERDTreeToggle<CR>
 nmap <Leader>c :e $MYVIMRC<Return>
-nmap <Leader>rc :so $MYVIMRC<Return>
+nmap <Leader>rc :so $MYVIMRC<Return>:echo "Reloaded ".$MYVIMRC<CR>
 nmap <Leader>u :.s/\\/\//g<Return>:nohlsearch<Return>
 nmap <Leader>\ :.s/\//\\/g<Return>:nohlsearch<Return>
 
@@ -70,7 +70,7 @@ command! W :w
 command! Gg :!git gui &
 command! Gk :!gitk --all &
 
-if has("use_slimv")
+if !has("use_slimv")
     let g:slimv_swank_clojure = '! xterm -e lein swank &'
     let use_slimv = 1
 endif

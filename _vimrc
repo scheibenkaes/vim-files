@@ -70,10 +70,12 @@ command! W :w
 command! Gg :!git gui &
 command! Gk :!gitk --all &
 
-if !has("use_slimv")
-    let g:slimv_swank_clojure = '! xterm -e lein swank &'
-    let use_slimv = 1
-endif
+""if !has("use_slimv")
+""    let g:slimv_swank_clojure = '! xterm -e lein swank &'
+""    let use_slimv = 1
+""endif
+""let g:paredit_mode = 0
+""let g:slimv_keybindings = 2
 
 " remapping this as slimv is overriding <Leader>t
 nmap <Leader>C :CommandT<CR>
